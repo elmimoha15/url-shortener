@@ -17,7 +17,7 @@ export default function Home() {
     setShortUrl('');
 
     try {
-      const res = await fetch('http://127.0.0.1:8000/shorten', {
+      const res = await fetch('http://urlshort-backend:8000/shorten', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
